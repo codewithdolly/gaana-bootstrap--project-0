@@ -1,0 +1,24 @@
+{
+    "name": "Gaana",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "server": "nodemon",
+      "client": "npm start --prefix /client",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "build": "npm run build --prefix /client"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^7.3.0",
+      "nodemon": "^2.0.19"
+    },
+    "dependencies": {
+      "express": "^4.18.1"
+    }
+  }
